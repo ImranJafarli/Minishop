@@ -1,0 +1,684 @@
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .header .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .introduction .nav1 {
+    background-color: #000;
+  }
+  .introduction .nav1 .navbar {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .introduction .nav1 .navbar .logo a {
+    color: #fff;
+  }
+  .introduction .nav1 .navbar nav ul {
+    display: none;
+  }
+  .introduction .nav1 .navbar nav ul li a {
+    color: #fff;
+  }
+  .introduction .nav1 .navbar nav ul i {
+    color: #fff;
+  }
+  .introduction .nav1 .navbar nav .submenu {
+    display: block;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .introduction .nav1 .navbar nav .submenu i {
+    color: #000;
+    margin-right: 7px;
+  }
+  .introduction .nav1 .navbar nav .submenu span {
+    color: #000;
+  }
+  .introduction .nav1 .navbar nav .altMenu {
+    display: block;
+  }
+  .introduction .container {
+    margin: 0 auto;
+    max-width: 720px;
+  }
+  .introduction .container .swiper .swiper-wrapper .swiper-slide .shoes {
+    position: relative;
+    height: 580px;
+  }
+  .introduction .container .swiper .swiper-wrapper .swiper-slide .shoes .new {
+    width: 100%;
+    z-index: 2;
+  }
+  .introduction .container .swiper .swiper-wrapper .swiper-slide .shoes .new h3 {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+  }
+  .introduction .container .swiper .swiper-wrapper .swiper-slide .shoes .new h2 {
+    font-size: 35px;
+    color: #fff;
+  }
+  .introduction .container .swiper .swiper-wrapper .swiper-slide .shoes .new p {
+    color: #fff;
+    font-size: 22px;
+  }
+  .introduction .container .swiper .swiper-wrapper .swiper-slide .shoes .new a {
+    position: absolute;
+    left: 40%;
+    bottom: 5%;
+  }
+  .introduction .container .swiper .swiper-wrapper .swiper-slide .shoes .bg-img {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+  }
+  .introduction .container .swiper .swiper-wrapper .swiper-slide .shoes .bg-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+    width: 100%;
+  }
+  .header .contact {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .contact .phone {
+    width: 100%;
+  }
+  .header .contact .mail {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .header .contact .delivery {
+    width: 100%;
+  }
+  .introduction .nav1 .navbar {
+    width: 100%;
+    padding: 20px 11px;
+    margin: 0 auto;
+  }
+  .introduction .nav1 .navbar .nav .submenu {
+    position: relative;
+  }
+  .introduction .nav1 .navbar .nav .submenu i:hover .altMenu {
+    display: block !important;
+  }
+  .introduction .nav1 .navbar .nav .submenu .altMenu {
+    position: absolute;
+    top: 156px;
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .secure-shop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secure-shop .shop-card {
+    margin: 0 auto;
+    max-width: 640px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .secure-shop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secure-shop .shop-card {
+    margin: 0 auto;
+    max-width: 540px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-text {
+    margin: 0 auto;
+  }
+  .card-product {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .card-product .products {
+    width: 48%;
+  }
+  .card-product .products .cards {
+    width: 100% !important;
+  }
+  .card-product .products .cards img {
+    width: 100%;
+    height: 100%;
+  }
+  .card-product .products .cards .percent {
+    left: -26px;
+  }
+  .card-product .products .cards .hover-bg {
+    display: block !important;
+    bottom: 10px !important;
+  }
+  .card-product .products .cards .hover-bg button {
+    width: 150px !important;
+    margin-left: 12px !important;
+  }
+  .card-product .products .product-info {
+    width: 100% !important;
+  }
+  .card-product .products .product-info .ranking {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product-text {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 480px;
+  }
+  .card-product .products {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-product .products .cards {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-product .products .cards img {
+    width: 80% !important;
+  }
+  .card-product .products .cards .hover-bg {
+    bottom: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .clothe-collection {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .clothe-collection .mens {
+    width: 100% !important;
+  }
+  .clothe-collection .mens .mens-info {
+    width: 680px !important;
+    text-align: center;
+    position: absolute !important;
+    top: 420px !important;
+    margin: -20px !important;
+  }
+  .clothe-collection .mens .mens-info .men {
+    margin-right: 10px;
+  }
+  .clothe-collection .mens img {
+    width: 100% !important;
+  }
+  .clothe-collection .right {
+    width: 100% !important;
+  }
+  .clothe-collection .right .women {
+    width: 100% !important;
+    position: relative !important;
+  }
+  .clothe-collection .right .women img {
+    width: 100% !important;
+  }
+  .clothe-collection .right .women .women-info {
+    position: absolute !important;
+    top: 2px !important;
+    right: 3%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .clothe-collection {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .clothe-collection .mens {
+    width: 100% !important;
+  }
+  .clothe-collection .mens .mens-info {
+    width: 520px !important;
+    height: 300px;
+    text-align: center;
+    position: absolute !important;
+    top: 420px !important;
+    margin: -30px !important;
+  }
+  .clothe-collection .mens .mens-info .men {
+    margin-right: 10px;
+  }
+  .clothe-collection .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clothe-collection .right .extra {
+    width: 100% !important;
+  }
+  .clothe-collection .right .kids {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nike {
+    width: 100%;
+    height: auto;
+  }
+  .nike .nike-product {
+    width: 100%;
+  }
+  .nike .nike-product .nike-shoes img {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .nike {
+    width: 100%;
+    height: auto;
+  }
+  .nike .nike-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nike .nike-product .nike-shoes {
+    width: 100%;
+  }
+  .nike .nike-product .nike-sport {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .support {
+    width: 100%;
+    height: auto;
+  }
+  .support .infos {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .support .infos .services-left {
+    width: 100%;
+  }
+  .support .infos .services-left .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .support .infos .services-left .service-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .support .infos .services-left .service-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .support .infos .services-left .service-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .support .infos .services-right {
+    width: 100%;
+    text-align: start;
+  }
+  .support .infos .services-right .services-info {
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .insta-photo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 600px !important;
+  }
+  .insta-photo .insta-left {
+    width: 100% !important;
+    height: 50%;
+  }
+  .insta-photo .insta-left .photos .insta-icon {
+    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: absolute;
+    left: 45%;
+    top: 36%;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+  }
+  .insta-photo .insta-right {
+    width: 100% !important;
+    height: 50%;
+  }
+  .insta-photo .insta-right .photos .insta-icon {
+    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: absolute;
+    left: 45%;
+    top: 36%;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .insta .insta-info h2 {
+    font-size: 32px;
+  }
+  .insta .insta-photo {
+    height: auto !important;
+  }
+  .insta .insta-photo .insta-left {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .insta .insta-photo .insta-left .photos {
+    width: 100% !important;
+    height: 270px !important;
+  }
+  .insta .insta-photo .insta-left .photos img {
+    width: 80% !important;
+    height: 100% !important;
+  }
+  .insta .insta-photo .insta-left .photos .insta-icon {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 45%;
+    top: 36%;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+  }
+  .insta .insta-photo .insta-right {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .insta .insta-photo .insta-right .photos {
+    width: 100% !important;
+    height: 270px !important;
+  }
+  .insta .insta-photo .insta-right .photos img {
+    width: 80% !important;
+    height: 100% !important;
+  }
+  .insta .insta-photo .insta-right .photos .insta-icon {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 45%;
+    top: 36%;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .footer-list .social-info {
+    width: 120px;
+  }
+  .footer .footer-list .social-info h4 {
+    font-weight: 900;
+  }
+  .footer .footer-list .social-info p {
+    font-size: 15px;
+    color: #ffefef;
+  }
+  .footer .footer-list .social-info .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-list .social-info .social i {
+    margin-bottom: 10px;
+  }
+  .footer .footer-list .menu {
+    margin-left: 34px;
+  }
+  .footer .footer-list .menu h4 {
+    font-weight: 900;
+  }
+  .footer .footer-list .help h4 {
+    font-weight: 700;
+  }
+  .footer .footer-list .help .help-list .term {
+    margin-right: 14px;
+  }
+  .footer .footer-list .help .help-list .faq {
+    margin-right: 71px;
+  }
+  .footer .footer-list .location {
+    width: 193px;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .footer .footer-list .location h4 {
+    font-weight: 700;
+  }
+  .footer .footer-list .location a i {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    width: 100%;
+    height: auto;
+  }
+  .footer .footer-list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-list .social-info {
+    width: 100%;
+  }
+  .footer .footer-list .social-info h4 {
+    font-size: 17px;
+    font-weight: 100;
+  }
+  .footer .footer-list .social-info p {
+    font-size: 13px;
+  }
+  .footer .footer-list .social-info .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .footer-list .menu {
+    margin: 0;
+  }
+  .footer .footer-list .menu h4 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .footer .footer-list .menu ul li a {
+    font-size: 12px;
+  }
+  .footer .footer-list .help {
+    padding: 0;
+    margin: 0;
+  }
+  .footer .footer-list .help h4 {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .footer .footer-list .help .help-list {
+    padding: 0;
+  }
+  .footer .footer-list .help .help-list li {
+    margin-top: 15px;
+  }
+  .footer .footer-list .help .help-list li a {
+    font-size: 12px;
+  }
+  .footer .footer-list .location {
+    margin: 0;
+  }
+  .footer .footer-list .location h4 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .footer .footer-list .location p {
+    font-size: 12px;
+  }
+  .footer .footer-list .location a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .copyright {
+    margin-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

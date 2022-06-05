@@ -1,0 +1,610 @@
+// Media header
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        .contact {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .introduction {
+        .nav1 {
+            background-color: #000;
+            .navbar {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                .logo {
+                    a {
+                        color: #fff;
+                    }
+                }
+                nav {
+                    ul {
+                        display: none;
+                        li {
+                            a {
+                                color: #fff;
+                            }
+                        }
+                        i {
+                            color: #fff;
+                        }
+                    }
+                    .submenu {
+                        display: block;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        i {
+                            color: #000;
+                            margin-right: 7px;
+                        }
+                        span {
+                            color: #000;
+                        }
+                    }
+                    .altMenu {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 720px;
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .shoes {
+                            position: relative;
+                            height: 580px;
+                            .new {
+                                width: 100%;
+                                z-index: 2;
+                                h3 {
+                                    position: absolute;
+                                    left: 40%;
+                                    top: 15%;
+                                }
+                                h2 {
+                                    font-size: 35px;
+                                    color: #fff;
+                                }
+                                p {
+                                    color: #fff;
+                                    font-size: 22px;
+                                }
+                                a {
+                                    position: absolute;
+                                    left: 40%;
+                                    bottom: 5%;
+                                }
+                            }
+                            .bg-img {
+                                z-index: 1;
+                                position: absolute;
+                                width: 100%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header {
+        width: 100%;
+        .contact {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .phone {
+                width: 100%;
+            }
+            .mail {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .delivery {
+                width: 100%;
+            }
+        }
+    }
+    .introduction {
+        .nav1 {
+            .navbar {
+                width: 100%;
+                padding: 20px 11px;
+                margin: 0 auto;
+                .nav {
+                    .submenu {
+                        position: relative;
+                        i {
+                            &:hover .altMenu {
+                                display: block !important;
+                            }
+                        }
+                        .altMenu {
+                            position: absolute;
+                            top: 156px;
+                            background-color: #000;
+                            width: 100%;
+                            height: auto;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Media secure-shop section
+@media only screen and (max-width: 768px) {
+    .secure-shop {
+        display: flex;
+        flex-direction: column;
+        .shop-card {
+            margin: 0 auto;
+            max-width: 640px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .secure-shop {
+        display: flex;
+        flex-direction: column;
+        .shop-card {
+            margin: 0 auto;
+            max-width: 540px;
+        }
+    }
+}
+
+// Media arrival section
+@media only screen and (max-width: 768px) {
+    .product-text {
+        margin: 0 auto;
+    }
+    .card-product {
+        margin: 0 auto;
+        display: flex;
+        .products {
+            width: 48%;
+            .cards {
+                width: 100% !important;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .percent {
+                    left: -26px;
+                }
+                .hover-bg {
+                    display: block !important;
+                    bottom: 10px !important;
+                    button {
+                        width: 150px !important;
+                        margin-left: 12px !important;
+                    }
+                }
+            }
+            .product-info {
+                width: 100% !important;
+                .ranking {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .product-text {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 480px;
+    }
+    .card-product {
+        .products {
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .cards {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 80% !important;
+                }
+                .hover-bg {
+                    bottom: 20px !important;
+                }
+            }
+        }
+    }
+}
+
+// Media collection section
+@media only screen and (max-width: 768px) {
+    .clothe-collection {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        .mens {
+            width: 100% !important;
+            .mens-info {
+                width: 680px !important;
+                text-align: center;
+                position: absolute !important;
+                top: 420px !important;
+                margin: -20px !important;
+                .men {
+                    margin-right: 10px;
+                }
+            }
+            img {
+                width: 100% !important;
+            }
+        }
+        .right {
+            width: 100% !important;
+            .women {
+                width: 100% !important;
+                position: relative !important;
+                img {
+                    width: 100% !important;
+                }
+                .women-info {
+                    position: absolute !important;
+                    top: 2px !important;
+                    right: 3%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .clothe-collection {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        .mens {
+            width: 100% !important;
+            .mens-info {
+                width: 520px !important;
+                height: 300px;
+                text-align: center;
+                position: absolute !important;
+                top: 420px !important;
+                margin: -30px !important;
+                .men {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            .extra {
+                width: 100% !important;
+            }
+            .kids {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+// Media deal of month section
+@media only screen and (max-width: 768px) {
+    .nike {
+        width: 100%;
+        height: auto;
+        .nike-product {
+            width: 100%;
+            .nike-shoes {
+                img {
+                    padding: 60px 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .nike {
+        width: 100%;
+        height: auto;
+        .nike-product {
+            display: flex;
+            flex-direction: column;
+            .nike-shoes {
+                width: 100%;
+            }
+            .nike-sport {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Media testimonial section
+@media only screen and (max-width: 768px) {
+    .support {
+        width: 100%;
+        height: auto;
+        .infos {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .services-left {
+                width: 100%;
+                .service {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                .service-2 {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                .service-3 {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                .service-4 {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+            .services-right {
+                width: 100%;
+                text-align: start;
+                .services-info {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+// Media Instagram info section
+@media only screen and (max-width: 768px) {
+    .insta-photo {
+        display: flex !important;
+        flex-direction: column;
+        height: 600px !important;
+        .insta-left {
+            width: 100% !important;
+            height: 50%;
+            .photos {
+                .insta-icon {
+                    display: block !important;
+                    display: flex !important;
+                    position: absolute;
+                    left: 45%;
+                    top: 36%;
+                    cursor: zoom-in;
+                }
+            }
+        }
+        .insta-right {
+            width: 100% !important;
+            height: 50%;
+            .photos {
+                .insta-icon {
+                    display: block !important;
+                    display: flex !important;
+                    position: absolute;
+                    left: 45%;
+                    top: 36%;
+                    cursor: zoom-in;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .insta {
+        .insta-info {
+            h2 {
+                font-size: 32px;
+            }
+        }
+        .insta-photo {
+            height: auto !important;
+            .insta-left {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                .photos {
+                    width: 100% !important;
+                    height: 270px !important;
+                    img {
+                        width: 80% !important;
+                        height: 100% !important;
+                    }
+                    .insta-icon {
+                        display: block;
+                        display: flex;
+                        position: absolute;
+                        left: 45%;
+                        top: 36%;
+                        cursor: zoom-in;
+                    }
+                }
+            }
+            .insta-right {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                .photos {
+                    width: 100% !important;
+                    height: 270px !important;
+                    img {
+                        width: 80% !important;
+                        height: 100% !important;
+                    }
+                    .insta-icon {
+                        display: block;
+                        display: flex;
+                        position: absolute;
+                        left: 45%;
+                        top: 36%;
+                        cursor: zoom-in;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Media footer
+@media only screen and (max-width: 768px) {
+    .footer {
+        .footer-list {
+            .social-info {
+                width: 120px;
+                h4 {
+                    font-weight: 900;
+                }
+                p {
+                    font-size: 15px;
+                    color: #ffefef;
+                }
+                .social {
+                    display: flex;
+                    flex-direction: column;
+                    i {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .menu {
+                margin-left: 34px;
+                h4 {
+                    font-weight: 900;
+                }
+            }
+            .help {
+                h4 {
+                    font-weight: 700;
+                }
+                .help-list {
+                    .term {
+                        margin-right: 14px;
+                    }
+                    .faq {
+                        margin-right: 71px;
+                    }
+                }
+            }
+            .location {
+                width: 193px;
+                font-size: 14px;
+                margin-left: 20px;
+                h4 {
+                    font-weight: 700;
+                }
+                a {
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer {
+        width: 100%;
+        height: auto;
+        .footer-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .social-info {
+                width: 100%;
+                h4 {
+                    font-size: 17px;
+                    font-weight: 100;
+                }
+                p {
+                    font-size: 13px;
+                }
+                .social {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+            .menu {
+                margin: 0;
+                h4 {
+                    font-size: 14px;
+                    font-weight: 100;
+                }
+                ul {
+                    li {
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .help {
+                padding: 0;
+                margin: 0;
+                h4 {
+                    padding: 0;
+                    font-size: 14px;
+                    font-weight: 100;
+                }
+                .help-list {
+                    padding: 0;
+                    li {
+                        margin-top: 15px;
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .location {
+                margin: 0;
+                h4 {
+                    font-size: 14px;
+                    font-weight: 100;
+                }
+                p{
+                    font-size: 12px;
+                }
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .copyright{
+        margin-bottom: 15px;
+    }
+}

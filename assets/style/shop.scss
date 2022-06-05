@@ -1,0 +1,275 @@
+@mixin hover {
+    color: #dbcc8f;
+    transition: 0.5s;
+}
+
+.shop {
+    width: 100%;
+    height: 600px;
+    background-image: url(../image/bg-image/bg_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .logo {
+            a {
+                color: #000;
+                font-size: 20px;
+                font-weight: 800;
+            }
+        }
+        nav {
+            ul {
+                display: flex;
+                gap: 30px;
+                font-size: 14px;
+                font-weight: 100;
+                li {
+                    a {
+                        color: #000;
+                        font-size: 12px;
+                    }
+                    ul {
+                        position: absolute;
+                        display: block;
+                        background: #000;
+                        width: 120px;
+                        height: 120px;
+                        margin-top: 20px;
+                        transition: 1.5s;
+                        opacity: 0;
+                        visibility: hidden;
+                        padding: 10px;
+                        font-size: 14px;
+                        z-index: 2;
+                        li {
+                            margin-bottom: 5px;
+                            a {
+                                color: #fff;
+                                &:hover {
+                                    @include hover;
+                                }
+                            }
+                        }
+                    }
+                    &:hover ul {
+                        height: 120px;
+                        padding: 10px;
+                        opacity: 1;
+                        visibility: visible;
+                        transition: 1s;
+                        transform: translateY(0px);
+                    }
+                }
+                i {
+                    color: #000;
+                    font-size: 10px;
+                    cursor: pointer;
+                    a {
+                        color: #fff;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .home-shop {
+        width: 100%;
+        padding: 12em 0;
+        text-align: center;
+        h4 {
+            font-weight: 100;
+        }
+        h2 {
+            font-size: 45px;
+            font-weight: 900;
+        }
+    }
+}
+
+// Start Categories
+.produce {
+    width: 100%;
+    background-color: #f8f9fa;
+    height: 1950px;
+    .items {
+        width: 100%;
+        display: flex;
+        .category {
+            width: 20%;
+            padding: 60px 0;
+            h3 {
+                padding: 20px 0;
+                font-size: 20px;
+                line-height: 1.5;
+                font-weight: 400;
+                color: #000;
+            }
+            ul {
+                li {
+                    color: #000;
+                    font-size: 14px;
+                    margin: 10px 0;
+                    span {
+                        color: #dbcc8f;
+                    }
+                    ul {
+                        li {
+                            font-size: 14px;
+                            color: black;
+                            margin: 10px 0;
+                            padding: 0 15px;
+                            display: none;
+                            &:hover {
+                                color: #dbcc8f;
+                            }
+                        }
+                    }
+                }
+            }
+            h4 {
+                font-weight: 300;
+                margin: 15px 0;
+            }
+            select {
+                width: 160px;
+                height: 40px;
+                padding: 0 15px;
+                border: 1px px solid #e7e7e7;
+            }
+        }
+        .orders {
+            width: 80%;
+            padding: 80px 0;
+            .card-product {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100%;
+                .products {
+                    margin-bottom: 25px;
+                    .cards {
+                        width: 255px;
+                        height: 382px;
+                        background-color: #f1f1f1;
+                        transition: 0.5s;
+                        position: relative;
+                        &:hover .hover-bg {
+                            display: block;
+                            transition: 0.5s;
+                        }
+                        &:hover img {
+                            transform: scale(1.2);
+                            transition: 0.5s;
+                            cursor: pointer;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                        .percent {
+                            transform: rotate(270deg);
+                            background-color: #dbcc8f;
+                            width: 100px;
+                            position: absolute;
+                            top: 29px;
+                            padding: 10px 12px;
+                            right: 181px;
+                        }
+                        .hover-bg {
+                            position: absolute;
+                            bottom: 33px;
+                            display: none;
+                            transition: 0.5s;
+                            #Add {
+                                width: 110px;
+                                height: 45px;
+                                color: #fff;
+                                background-color: black;
+                                font-weight: 100;
+                                border-radius: 3px;
+                                cursor: pointer;
+                                transition: 0.5s;
+                                margin-left: 14px;
+                                &:hover {
+                                    background-color: #c2a942;
+                                    border: 1px solid #c2a942;
+                                    transition: 0.5s;
+                                }
+                            }
+                            #Buy {
+                                width: 110px;
+                                height: 45px;
+                                background-color: #fff;
+                                border-radius: 3px;
+                                border: none;
+                                cursor: pointer;
+                                transition: 0.5s;
+                                &:hover {
+                                    background-color: #c2a942;
+                                    transition: 0.5s;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .product-info {
+                        width: 255px;
+                        height: 150px;
+                        background-color: #fff;
+                        padding: 15px;
+                        .ranking {
+                            display: flex;
+                            padding: 8px 0;
+                            align-items: center;
+                            p {
+                                color: #c7bbbb;
+                                margin-right: 56px;
+                                text-transform: uppercase;
+                            }
+                            i {
+                                color: #dbcc8f;
+                                font-size: 10px;
+                                cursor: pointer;
+                            }
+                        }
+                        p {
+                            font-weight: 600;
+                        }
+                        span {
+                            padding: 10px 0;
+                            font-weight: 100;
+                        }
+                        .discount {
+                            text-decoration: line-through;
+                            color: #c7bbbb;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nums {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .next {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 5px;
+            &:hover {
+                background-color: #dbcc8f;
+                transition: 0.5s;
+            }
+        }
+    }
+}

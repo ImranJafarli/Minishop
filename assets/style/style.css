@@ -1,0 +1,1312 @@
+.header {
+  background-color: black;
+  width: 100%;
+}
+
+.header .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .contact .phone i {
+  color: #fff;
+  font-size: 11px;
+}
+
+.header .contact .phone a {
+  color: #fff;
+  font-size: 11px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .contact .phone a:hover {
+  color: #dbcc8f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .contact .mail i {
+  color: #fff;
+  font-size: 11px;
+}
+
+.header .contact .mail a {
+  color: #fff;
+  font-size: 11px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .contact .mail a:hover {
+  color: #dbcc8f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .contact .delivery p {
+  color: #fff;
+  font-size: 11px;
+}
+
+.introduction {
+  width: 100%;
+  height: 650px;
+  background-color: #dbcc8f;
+}
+
+.introduction .navbar {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1% 9%;
+}
+
+.introduction .navbar .logo a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.introduction .navbar nav {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.introduction .navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.introduction .navbar nav ul li a {
+  color: #000;
+  font-size: 12px;
+}
+
+.introduction .navbar nav ul li ul {
+  position: absolute;
+  display: block;
+  background: #000;
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.introduction .navbar nav ul li ul li {
+  margin-bottom: 5px;
+}
+
+.introduction .navbar nav ul li ul li a {
+  color: #fff;
+}
+
+.introduction .navbar nav ul li ul li a:hover {
+  color: #dbcc8f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.introduction .navbar nav ul li:hover ul {
+  height: 120px;
+  padding: 10px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.introduction .navbar nav ul i {
+  color: #000;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.introduction .navbar nav ul i a {
+  color: #fff;
+  font-size: 12px;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  border-radius: 50%;
+}
+
+.introduction .navbar nav .submenu {
+  display: none;
+  position: relative;
+}
+
+.introduction .navbar nav .submenu i {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.introduction .navbar nav .submenu i:hover .altMenu {
+  display: block;
+}
+
+.introduction .navbar nav .altMenu {
+  position: absolute;
+  top: 156px;
+  background-color: #000;
+  width: 100%;
+  left: 0;
+}
+
+.introduction .navbar nav .altMenu ul {
+  display: none;
+}
+
+.introduction .swiper .swiper-wrapper .swiper-slide .shoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.introduction .swiper .swiper-wrapper .swiper-slide .shoes .new {
+  padding: 120px 0;
+  width: 40%;
+}
+
+.introduction .swiper .swiper-wrapper .swiper-slide .shoes .new h3 {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  font-weight: 100;
+  width: 150px;
+  padding: 0 5px;
+}
+
+.introduction .swiper .swiper-wrapper .swiper-slide .shoes .new h2 {
+  padding: 20px 0;
+  font-size: 44px;
+  font-weight: 100;
+}
+
+.introduction .swiper .swiper-wrapper .swiper-slide .shoes .new p {
+  font-size: 14px;
+  color: #222;
+  font-weight: 100;
+  padding: 20px 0;
+}
+
+.introduction .swiper .swiper-wrapper .swiper-slide .shoes .new a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  padding: 7px 17px;
+  color: #fff;
+  background-color: #c2a942;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.introduction .swiper .swiper-wrapper .swiper-slide .shoes .new a:hover {
+  background-color: #a39148;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.introduction .swiper .swiper-wrapper .swiper-slide .shoes .bg-img {
+  width: 60%;
+}
+
+.introduction .swiper .swiper-wrapper .swiper-slide .shoes .bg-img img {
+  width: 100%;
+}
+
+.shopping {
+  width: 100%;
+}
+
+.shopping .secure-shop {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.shopping .secure-shop .shop-card i {
+  font-size: 70px;
+  padding: 10px 0;
+}
+
+.shopping .secure-shop .shop-card h3 {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.shopping .secure-shop .shop-card p {
+  color: #888;
+  font-size: 14px;
+}
+
+.new-product {
+  width: 100%;
+  background-color: #f8f9fa;
+  height: auto;
+  padding: 40px 0;
+}
+
+.new-product .product-text {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.new-product .product-text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+}
+
+.new-product .product-text p {
+  color: #888;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.new-product .card-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.new-product .card-product .products {
+  margin-bottom: 25px;
+}
+
+.new-product .card-product .products .cards {
+  width: 255px;
+  height: 382px;
+  background-color: #f1f1f1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+
+.new-product .card-product .products .cards:hover .hover-bg {
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new-product .card-product .products .cards:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.new-product .card-product .products .cards img {
+  width: 100%;
+}
+
+.new-product .card-product .products .cards .percent {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  background-color: #dbcc8f;
+  width: 100px;
+  position: absolute;
+  top: 29px;
+  padding: 10px 12px;
+  right: 181px;
+}
+
+.new-product .card-product .products .cards .hover-bg {
+  position: absolute;
+  bottom: 33px;
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new-product .card-product .products .cards .hover-bg #Add {
+  width: 110px;
+  height: 45px;
+  color: #fff;
+  background-color: black;
+  font-weight: 100;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 14px;
+}
+
+.new-product .card-product .products .cards .hover-bg #Add:hover {
+  background-color: #c2a942;
+  border: 1px solid #c2a942;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new-product .card-product .products .cards .hover-bg #Buy {
+  width: 110px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new-product .card-product .products .cards .hover-bg #Buy:hover {
+  background-color: #c2a942;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.new-product .card-product .products .product-info {
+  width: 255px;
+  height: 150px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.new-product .card-product .products .product-info .ranking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-product .card-product .products .product-info .ranking p {
+  color: #c7bbbb;
+  margin-right: 56px;
+  text-transform: uppercase;
+}
+
+.new-product .card-product .products .product-info .ranking .star i {
+  color: #dbcc8f;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.new-product .card-product .products .product-info p {
+  font-weight: 600;
+}
+
+.new-product .card-product .products .product-info span {
+  padding: 10px 0;
+  font-weight: 100;
+}
+
+.new-product .card-product .products .product-info .discount {
+  text-decoration: line-through;
+  color: #c7bbbb;
+}
+
+.collection {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.collection .clothe-collection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.collection .clothe-collection .mens {
+  width: 30%;
+  height: 700px;
+}
+
+.collection .clothe-collection .mens img {
+  width: 100%;
+  height: 100%;
+}
+
+.collection .clothe-collection .mens .mens-info {
+  width: 255px;
+  position: absolute;
+  bottom: 234px;
+  left: 43px;
+}
+
+.collection .clothe-collection .mens .mens-info p {
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.collection .clothe-collection .mens .mens-info h2 {
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.collection .clothe-collection .mens .mens-info a {
+  display: block;
+  width: 99px;
+  height: 35px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  background-color: #000;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 100;
+  margin: 15px auto;
+}
+
+.collection .clothe-collection .mens .mens-info a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #dbcc8f;
+  color: #000;
+}
+
+.collection .clothe-collection .right {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.collection .clothe-collection .right .women {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.collection .clothe-collection .right .women img {
+  width: 100%;
+  height: 350px;
+}
+
+.collection .clothe-collection .right .women .women-info {
+  position: absolute;
+  top: 45px;
+  text-align: start;
+  width: 33%;
+}
+
+.collection .clothe-collection .right .women .women-info p {
+  color: #fff;
+  padding: 10px 0;
+}
+
+.collection .clothe-collection .right .women .women-info h2 {
+  color: #fff;
+  padding: 10px 0;
+}
+
+.collection .clothe-collection .right .women .women-info a {
+  display: block;
+  width: 99px;
+  height: 35px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  background-color: #000;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 100;
+}
+
+.collection .clothe-collection .right .women .women-info a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #dbcc8f;
+  color: #000;
+}
+
+.collection .clothe-collection .right .extra {
+  height: 350px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 90px 0;
+  width: 50%;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.collection .clothe-collection .right .extra p {
+  font-weight: 100;
+}
+
+.collection .clothe-collection .right .extra h2 {
+  font-size: 26px;
+}
+
+.collection .clothe-collection .right .extra .text {
+  color: #bdafaf;
+}
+
+.collection .clothe-collection .right .extra a {
+  display: block;
+  width: 99px;
+  height: 35px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  background-color: #000;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 100;
+  margin: 20px auto;
+}
+
+.collection .clothe-collection .right .extra a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #dbcc8f;
+  color: #000;
+}
+
+.collection .clothe-collection .right .kids {
+  width: 50%;
+}
+
+.collection .clothe-collection .right .kids img {
+  width: 100%;
+  height: 100%;
+}
+
+.collection .clothe-collection .right .kids .kids-info {
+  position: absolute;
+  bottom: 46px;
+  text-align: center;
+}
+
+.collection .clothe-collection .right .kids .kids-info p {
+  color: #fff;
+  text-align: center;
+}
+
+.collection .clothe-collection .right .kids .kids-info h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.collection .clothe-collection .right .kids .kids-info a {
+  display: block;
+  width: 99px;
+  height: 35px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  background-color: #000;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 100;
+  margin: 20px auto;
+}
+
+.collection .clothe-collection .right .kids .kids-info a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #dbcc8f;
+  color: #000;
+}
+
+.nike {
+  width: 100%;
+  height: 600px;
+  background-color: #dbcc8f;
+}
+
+.nike .nike-product {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nike .nike-product .nike-shoes {
+  width: 50%;
+  padding-top: 80px;
+}
+
+.nike .nike-product .nike-shoes img {
+  width: 100%;
+}
+
+.nike .nike-product .nike-sport {
+  width: 50%;
+  padding: 55px 0;
+  text-align: start;
+}
+
+.nike .nike-product .nike-sport .nike-sport-title {
+  width: 100%;
+  padding: 0px 17px;
+}
+
+.nike .nike-product .nike-sport .nike-sport-title p {
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.nike .nike-product .nike-sport .nike-sport-title h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.nike .nike-product .nike-sport #countdown {
+  width: 100%;
+}
+
+.nike .nike-product .nike-sport #countdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nike .nike-product .nike-sport #countdown ul li {
+  display: inline-block;
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nike .nike-product .nike-sport #countdown ul li span {
+  display: block;
+  font-size: 25px;
+}
+
+.nike .nike-product .nike-sport a {
+  display: block;
+  margin-left: 23px;
+  font-size: 40px;
+  color: #000;
+  font-weight: 600;
+  padding: 40px 0;
+}
+
+.nike .nike-product .nike-sport .sale-nike {
+  text-decoration: line-through;
+  margin-left: 22px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+.nike .nike-product .nike-sport span {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.nike .nike-product .nike-sport ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nike .nike-product .nike-sport ul li {
+  width: 100px;
+  height: 100px;
+}
+
+.nike .nike-product .nike-sport ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.support {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.support .infos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.support .infos .services-left {
+  width: 40%;
+}
+
+.support .infos .services-left .service {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.support .infos .services-left .service .service-icon i {
+  font-size: 82px;
+  margin-right: 13px;
+}
+
+.support .infos .services-left .service .service-info h3 {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.support .infos .services-left .service .service-info p {
+  color: #939090;
+}
+
+.support .infos .services-left .service-2 {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.support .infos .services-left .service-2 .service-icon i {
+  font-size: 82px;
+  margin-right: 13px;
+}
+
+.support .infos .services-left .service-2 .service-info h3 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-left: 21px;
+}
+
+.support .infos .services-left .service-2 .service-info p {
+  color: #939090;
+  margin-left: 20px;
+}
+
+.support .infos .services-left .service-3 {
+  background-color: #dbcc8f;
+  width: 100%;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.support .infos .services-left .service-3 .service-icon i {
+  font-size: 82px;
+  margin-right: 13px;
+}
+
+.support .infos .services-left .service-3 .service-info h3 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-left: 21px;
+}
+
+.support .infos .services-left .service-3 .service-info p {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.support .infos .services-left .service-4 {
+  background-color: #000;
+  width: 100%;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.support .infos .services-left .service-4 .service-icon i {
+  font-size: 82px;
+  margin-right: 13px;
+  color: #fff;
+}
+
+.support .infos .services-left .service-4 .service-info h3 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  margin-left: 21px;
+}
+
+.support .infos .services-left .service-4 .service-info p {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.support .infos .services-right {
+  width: 60%;
+  padding: 10px 40px;
+}
+
+.support .infos .services-right .services-info h2 {
+  padding: 20px 0;
+  font-size: 35px;
+  color: #343434;
+}
+
+.support .infos .services-right .services-info p {
+  color: #bbb6b6;
+}
+
+.support .infos .services-right .mySwiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.support .infos .services-right .mySwiper .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.support .infos .services-right .mySwiper .swiper-wrapper .swiper-slide .person {
+  width: 100px;
+  height: 100px;
+}
+
+.support .infos .services-right .mySwiper .swiper-wrapper .swiper-slide .person img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.support .infos .services-right .mySwiper .swiper-wrapper .swiper-slide .comment {
+  padding: 40px 0;
+}
+
+.support .infos .services-right .mySwiper .swiper-wrapper .swiper-slide .comment p {
+  border-left: 2px solid #dbcc8f;
+}
+
+.support .infos .services-right .mySwiper .swiper-wrapper .swiper-slide .comment .name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  color: #dbcc8f;
+}
+
+.support .infos .services-right .mySwiper .swiper-wrapper .swiper-slide .comment span {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(143, 141, 141, 0.548);
+}
+
+.insta {
+  width: 100%;
+}
+
+.insta .insta-info {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.insta .insta-info h2 {
+  font-size: 45px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.insta .insta-info p {
+  width: 62%;
+  margin: 0 auto;
+  color: #afafaf;
+}
+
+.insta .insta-photo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 268px;
+}
+
+.insta .insta-photo .insta-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.insta .insta-photo .insta-left .photos {
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+}
+
+.insta .insta-photo .insta-left .photos:hover .insta-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insta .insta-photo .insta-left .photos img {
+  width: 100%;
+  height: 100%;
+}
+
+.insta .insta-photo .insta-left .photos .insta-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 103px;
+  left: 89px;
+  background-color: #dbcc8f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.insta .insta-photo .insta-left .photos .insta-icon i {
+  color: #fff;
+}
+
+.insta .insta-photo .insta-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insta .insta-photo .insta-right .photos {
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+}
+
+.insta .insta-photo .insta-right .photos:hover .insta-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insta .insta-photo .insta-right .photos img {
+  width: 100%;
+  height: 100%;
+}
+
+.insta .insta-photo .insta-right .photos .insta-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 103px;
+  left: 89px;
+  background-color: #dbcc8f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.insta .insta-photo .insta-right .photos .insta-icon i {
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  height: 520px;
+  background-color: #000;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-list {
+  width: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-list .social-info {
+  width: 25%;
+}
+
+.footer .footer-list .social-info h4 {
+  font-weight: 300;
+  padding: 30px 0;
+}
+
+.footer .footer-list .social-info p {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.footer .footer-list .social-info .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+
+.footer .footer-list .social-info .social i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dbcc8f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.footer .footer-list .social-info .social i:hover {
+  background-color: #e9c740;
+}
+
+.footer .footer-list .menu {
+  padding: 30px 0;
+  width: 20%;
+}
+
+.footer .footer-list .menu h4 {
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer .footer-list .menu ul {
+  padding: 15px 0;
+}
+
+.footer .footer-list .menu ul li {
+  margin: 10px 0;
+}
+
+.footer .footer-list .menu ul li a {
+  color: #fff;
+}
+
+.footer .footer-list .menu ul li a:hover {
+  color: #e9c740;
+}
+
+.footer .footer-list .help {
+  padding: 30px;
+  width: 30%;
+}
+
+.footer .footer-list .help h4 {
+  font-weight: 300;
+  padding: 0 25px;
+}
+
+.footer .footer-list .help .help-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 260px;
+  padding: 22px 25px;
+}
+
+.footer .footer-list .help .help-list ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-list .help .help-list ul li a {
+  color: #fff;
+}
+
+.footer .footer-list .help .help-list ul li a:hover {
+  color: #e9c740;
+}
+
+.footer .footer-list .location {
+  width: 25%;
+  padding: 30px 0;
+}
+
+.footer .footer-list .location h4 {
+  font-weight: 300;
+}
+
+.footer .footer-list .location p {
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.footer .footer-list .location p:hover {
+  color: #e9c740;
+}
+
+.footer .footer-list .location a {
+  display: block;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer .footer-list .location a:hover {
+  color: #e9c740;
+}
+
+.footer .copyright {
+  width: 100%;
+}
+
+.footer .copyright p {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer .copyright p a {
+  color: #dbcc8f;
+}
+
+.footer .copyright p a:hover {
+  color: #e9c740;
+}
+
+.footer .copyright p i {
+  cursor: pointer;
+  color: #fd0c0c;
+}
+
+.footer .copyright p i:hover {
+  color: #e9c740;
+}
+
+.footer #upper {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  left: 48%;
+  top: -29px;
+}
+/*# sourceMappingURL=style.css.map */

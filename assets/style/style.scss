@@ -1,0 +1,997 @@
+@mixin header-size {
+    color: #fff;
+    font-size: 11px;
+}
+
+@mixin hover {
+    color: #dbcc8f;
+    transition: 0.5s;
+}
+
+// collection mixin
+
+@mixin shop-now {
+    display: block;
+    width: 99px;
+    height: 35px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    background-color: #000;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+    font-weight: 100;
+}
+
+@mixin shop-hover {
+    transition: 0.5s;
+    background-color: #dbcc8f;
+    color: #000;
+}
+
+@mixin shop-info {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+// service mixin
+
+@mixin service {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+@mixin service-icon {
+    font-size: 82px;
+    margin-right: 13px;
+}
+
+// Start header
+.header {
+    background-color: black;
+    width: 100%;
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .phone {
+            i {
+                @include header-size;
+            }
+            a {
+                @include header-size;
+                transition: 0.5s;
+                &:hover {
+                    @include hover;
+                }
+            }
+        }
+        .mail {
+            i {
+                @include header-size;
+            }
+            a {
+                @include header-size;
+                transition: 0.5s;
+                &:hover {
+                    @include hover;
+                }
+            }
+        }
+        .delivery {
+            p {
+                @include header-size;
+            }
+        }
+    }
+}
+
+// Start introduction
+.introduction {
+    width: 100%;
+    height: 650px;
+    background-color: #dbcc8f;
+    .navbar {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 9%;
+        .logo {
+            a {
+                color: #000;
+                font-size: 20px;
+                font-weight: 800;
+            }
+        }
+        nav {
+            width: 450px;
+            display: flex;
+            justify-content: space-between;
+            ul {
+                display: flex;
+                gap: 30px;
+                font-size: 14px;
+                font-weight: 100;
+                li {
+                    a {
+                        color: #000;
+                        font-size: 12px;
+                    }
+                    ul {
+                        position: absolute;
+                        display: block;
+                        background: #000;
+                        width: 120px;
+                        height: 120px;
+                        margin-top: 20px;
+                        transition: 1.5s;
+                        opacity: 0;
+                        visibility: hidden;
+                        padding: 10px;
+                        font-size: 14px;
+                        z-index: 2;
+                        li {
+                            margin-bottom: 5px;
+                            a {
+                                color: #fff;
+                                &:hover {
+                                    @include hover;
+                                }
+                            }
+                        }
+                    }
+                    &:hover ul {
+                        height: 120px;
+                        padding: 10px;
+                        opacity: 1;
+                        visibility: visible;
+                        transition: 1s;
+                        transform: translateY(0px);
+                    }
+                }
+                i {
+                    color: #000;
+                    font-size: 10px;
+                    cursor: pointer;
+                    a {
+                        color: #fff;
+                        font-size: 12px;
+                        background-color: red;
+                        width: 15px;
+                        height: 15px;
+                        align-items: center;
+                        justify-content: center;
+                        display: inline-grid;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .submenu {
+                display: none;
+                position: relative;
+                i {
+                    font-size: 16px;
+                    cursor: pointer;
+                    &:hover .altMenu {
+                        display: block;
+                    }
+                }
+            }
+            .altMenu {
+                position: absolute;
+                top: 156px;
+                background-color: #000;
+                width: 100%;
+                left: 0;
+                ul {
+                    display: none;
+                }
+            }
+        }
+    }
+    .swiper {
+        .swiper-wrapper {
+            .swiper-slide {
+                .shoes {
+                    display: flex;
+                    .new {
+                        padding: 120px 0;
+                        width: 40%;
+                        h3 {
+                            display: block;
+                            background-color: #000;
+                            color: #fff;
+                            font-weight: 100;
+                            width: 150px;
+                            padding: 0 5px;
+                        }
+                        h2 {
+                            padding: 20px 0;
+                            font-size: 44px;
+                            font-weight: 100;
+                        }
+                        p {
+                            font-size: 14px;
+                            color: #222;
+                            font-weight: 100;
+                            padding: 20px 0;
+                        }
+                        a {
+                            display: block;
+                            width: 150px;
+                            height: 40px;
+                            padding: 7px 17px;
+                            color: #fff;
+                            background-color: #c2a942;
+                            transition: 0.5s;
+                            &:hover {
+                                background-color: #a39148;
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                    .bg-img {
+                        width: 60%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Shipping info
+.shopping {
+    width: 100%;
+    .secure-shop {
+        padding: 40px 0;
+        display: flex;
+        text-align: center;
+        gap: 30px;
+        width: 100%;
+        .shop-card {
+            i {
+                font-size: 70px;
+                padding: 10px 0;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 16px;
+                padding: 20px 0;
+            }
+            p {
+                color: #888;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Start new arrival
+.new-product {
+    width: 100%;
+    background-color: #f8f9fa;
+    height: auto;
+    padding: 40px 0;
+    .product-text {
+        width: 100%;
+        text-align: center;
+        padding: 40px 0;
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: #000;
+        }
+        p {
+            color: #888;
+            padding: 20px 0;
+            font-size: 14px;
+        }
+    }
+    .card-product {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        .products {
+            margin-bottom: 25px;
+            .cards {
+                width: 255px;
+                height: 382px;
+                background-color: #f1f1f1;
+                transition: 0.5s;
+                position: relative;
+                &:hover .hover-bg {
+                    display: block;
+                    transition: 0.5s;
+                }
+                &:hover img {
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
+                img {
+                    width: 100%;
+                }
+                .percent {
+                    transform: rotate(270deg);
+                    background-color: #dbcc8f;
+                    width: 100px;
+                    position: absolute;
+                    top: 29px;
+                    padding: 10px 12px;
+                    right: 181px;
+                }
+                .hover-bg {
+                    position: absolute;
+                    bottom: 33px;
+                    display: none;
+                    transition: 0.5s;
+                    #Add {
+                        width: 110px;
+                        height: 45px;
+                        color: #fff;
+                        background-color: black;
+                        font-weight: 100;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        transition: 0.5s;
+                        margin-left: 14px;
+                        &:hover {
+                            background-color: #c2a942;
+                            border: 1px solid #c2a942;
+                            transition: 0.5s;
+                        }
+                    }
+                    #Buy {
+                        width: 110px;
+                        height: 45px;
+                        background-color: #fff;
+                        border-radius: 3px;
+                        border: none;
+                        cursor: pointer;
+                        transition: 0.5s;
+                        &:hover {
+                            background-color: #c2a942;
+                            transition: 0.5s;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .product-info {
+                width: 255px;
+                height: 150px;
+                background-color: #fff;
+                padding: 15px;
+                .ranking {
+                    display: flex;
+                    padding: 8px 0;
+                    align-items: center;
+                    p {
+                        color: #c7bbbb;
+                        margin-right: 56px;
+                        text-transform: uppercase;
+                    }
+                    .star {
+                        i {
+                            color: #dbcc8f;
+                            font-size: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                p {
+                    font-weight: 600;
+                }
+                span {
+                    padding: 10px 0;
+                    font-weight: 100;
+                }
+                .discount {
+                    text-decoration: line-through;
+                    color: #c7bbbb;
+                }
+            }
+        }
+    }
+}
+
+// Start collection
+.collection {
+    width: 100%;
+    padding-top: 100px;
+    .clothe-collection {
+        width: 100%;
+        display: flex;
+        position: relative;
+        .mens {
+            width: 30%;
+            height: 700px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .mens-info {
+                width: 255px;
+                position: absolute;
+                bottom: 234px;
+                left: 43px;
+                p {
+                    @include shop-info;
+                }
+                h2 {
+                    @include shop-info;
+                }
+                a {
+                    @include shop-now;
+                    margin: 15px auto;
+                    &:hover {
+                        @include shop-hover;
+                    }
+                }
+            }
+        }
+        .right {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            .women {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: end;
+                img {
+                    width: 100%;
+                    height: 350px;
+                }
+                .women-info {
+                    position: absolute;
+                    top: 45px;
+                    text-align: start;
+                    width: 33%;
+                    p {
+                        color: #fff;
+                        padding: 10px 0;
+                    }
+                    h2 {
+                        color: #fff;
+                        padding: 10px 0;
+                    }
+                    a {
+                        @include shop-now;
+                        &:hover {
+                            @include shop-hover;
+                        }
+                    }
+                }
+            }
+            .extra {
+                height: 350px;
+                align-items: center;
+                padding: 90px 0;
+                width: 50%;
+                background-color: #f8f9fa;
+                text-align: center;
+                p {
+                    font-weight: 100;
+                }
+                h2 {
+                    font-size: 26px;
+                }
+                .text {
+                    color: #bdafaf;
+                }
+                a {
+                    @include shop-now;
+                    margin: 20px auto;
+                    &:hover {
+                        @include shop-hover;
+                    }
+                }
+            }
+            .kids {
+                width: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .kids-info {
+                    position: absolute;
+                    bottom: 46px;
+                    text-align: center;
+                    p {
+                        color: #fff;
+                        text-align: center;
+                    }
+                    h2 {
+                        color: #fff;
+                        text-align: center;
+                    }
+                    a {
+                        @include shop-now;
+                        margin: 20px auto;
+                        &:hover {
+                            @include shop-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Start deal of month
+.nike {
+    width: 100%;
+    height: 600px;
+    background-color: #dbcc8f;
+    .nike-product {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .nike-shoes {
+            width: 50%;
+            padding-top: 80px;
+            img {
+                width: 100%;
+            }
+        }
+        .nike-sport {
+            width: 50%;
+            padding: 55px 0;
+            text-align: start;
+            .nike-sport-title {
+                width: 100%;
+                padding: 0px 17px;
+                p {
+                    color: #fff;
+                    margin-bottom: 25px;
+                }
+                h2 {
+                    font-size: 40px;
+                    color: #fff;
+                }
+            }
+            #countdown {
+                width: 100%;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        display: inline-block;
+                        list-style-type: none;
+                        text-transform: uppercase;
+                        text-align: center;
+                        span {
+                            display: block;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            a {
+                display: block;
+                margin-left: 23px;
+                font-size: 40px;
+                color: #000;
+                font-weight: 600;
+                padding: 40px 0;
+            }
+            .sale-nike {
+                text-decoration: line-through;
+                margin-left: 22px;
+                font-size: 22px;
+                font-weight: 600;
+                color: #000;
+            }
+            span {
+                font-size: 22px;
+                color: #fff;
+                font-weight: 900;
+            }
+            ul {
+                display: flex;
+                li {
+                    width: 100px;
+                    height: 100px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Start testimonial
+.support {
+    width: 100%;
+    padding: 80px 0;
+    .infos {
+        width: 100%;
+        display: flex;
+        .services-left {
+            width: 40%;
+            .service {
+                background-color: #f7f7f7;
+                @include service;
+                .service-icon {
+                    i {
+                        @include service-icon;
+                    }
+                }
+                .service-info {
+                    h3 {
+                        font-size: 26px;
+                        font-weight: 900;
+                    }
+                    p {
+                        color: #939090;
+                    }
+                }
+            }
+            .service-2 {
+                background-color: #e5e5e5;
+                @include service;
+                .service-icon {
+                    i {
+                        @include service-icon;
+                    }
+                }
+                .service-info {
+                    h3 {
+                        font-size: 26px;
+                        font-weight: 900;
+                        margin-left: 21px;
+                    }
+                    p {
+                        color: #939090;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .service-3 {
+                background-color: #dbcc8f;
+                @include service;
+                .service-icon {
+                    i {
+                        @include service-icon;
+                    }
+                }
+                .service-info {
+                    h3 {
+                        font-size: 26px;
+                        font-weight: 900;
+                        margin-left: 21px;
+                    }
+                    p {
+                        color: #fff;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .service-4 {
+                background-color: #000;
+                @include service;
+                .service-icon {
+                    i {
+                        @include service-icon;
+                        color: #fff;
+                    }
+                }
+                .service-info {
+                    h3 {
+                        color: #fff;
+                        font-size: 26px;
+                        font-weight: 900;
+                        margin-left: 21px;
+                    }
+                    p {
+                        color: #fff;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        .services-right {
+            width: 60%;
+            padding: 10px 40px;
+            .services-info {
+                h2 {
+                    padding: 20px 0;
+                    font-size: 35px;
+                    color: #343434;
+                }
+                p {
+                    color: #bbb6b6;
+                }
+            }
+            .mySwiper {
+                .swiper-wrapper {
+                    width: 100%;
+                    height: 100%;
+                    .swiper-slide {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: start;
+                        .person {
+                            width: 100px;
+                            height: 100px;
+                            img {
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                        .comment {
+                            padding: 40px 0;
+                            p {
+                                border-left: 2px solid #dbcc8f;
+                            }
+                            .name {
+                                font-weight: 600;
+                                font-size: 18px;
+                                margin-bottom: 0;
+                                color: #dbcc8f;
+                            }
+                            span {
+                                font-size: 12px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                                letter-spacing: 2px;
+                                color: rgba(143, 141, 141, 0.548);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Start Instagram info
+.insta {
+    width: 100%;
+    .insta-info {
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+        h2 {
+            font-size: 45px;
+            font-weight: 600;
+            padding: 20px 0;
+        }
+        p {
+            width: 62%;
+            margin: 0 auto;
+            color: #afafaf;
+        }
+    }
+    .insta-photo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 268px;
+        .insta-left {
+            display: flex;
+            width: 50%;
+            .photos {
+                width: 33.33%;
+                height: 100%;
+                position: relative;
+                &:hover .insta-icon {
+                    display: flex;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .insta-icon {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    bottom: 103px;
+                    left: 89px;
+                    background-color: #dbcc8f;
+                    align-items: center;
+                    display: none;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: zoom-in;
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .insta-right {
+            width: 50%;
+            display: flex;
+            .photos {
+                width: 33.33%;
+                height: 100%;
+                position: relative;
+                &:hover .insta-icon {
+                    display: flex;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .insta-icon {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    bottom: 103px;
+                    left: 89px;
+                    background-color: #dbcc8f;
+                    align-items: center;
+                    display: none;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: zoom-in;
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Start footer
+.footer {
+    width: 100%;
+    height: 520px;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .footer-list {
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        .social-info {
+            width: 25%;
+            h4 {
+                font-weight: 300;
+                padding: 30px 0;
+            }
+            p {
+                font-weight: 100;
+                font-size: 14px;
+            }
+            .social {
+                display: flex;
+                padding: 20px 0;
+                i {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #dbcc8f;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #e9c740;
+                    }
+                }
+            }
+        }
+        .menu {
+            padding: 30px 0;
+            width: 20%;
+            h4 {
+                color: #fff;
+                font-weight: 300;
+            }
+            ul {
+                padding: 15px 0;
+                li {
+                    margin: 10px 0;
+                    a {
+                        color: #fff;
+                        &:hover {
+                            color: #e9c740;
+                        }
+                    }
+                }
+            }
+        }
+        .help {
+            padding: 30px;
+            width: 30%;
+            h4 {
+                font-weight: 300;
+                padding: 0 25px;
+            }
+            .help-list {
+                display: flex;
+                justify-content: space-around;
+                width: 260px;
+                padding: 22px 25px;
+                ul {
+                    li {
+                        margin-bottom: 10px;
+                        a {
+                            color: #fff;
+                            &:hover {
+                                color: #e9c740;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .location {
+            width: 25%;
+            padding: 30px 0;
+            h4 {
+                font-weight: 300;
+            }
+            p {
+                padding: 20px 0;
+                cursor: pointer;
+                &:hover {
+                    color: #e9c740;
+                }
+            }
+            a {
+                display: block;
+                color: #fff;
+                margin-bottom: 15px;
+                &:hover {
+                    color: #e9c740;
+                }
+            }
+        }
+    }
+    .copyright {
+        width: 100%;
+        p {
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            a {
+                color: #dbcc8f;
+                &:hover {
+                    color: #e9c740;
+                }
+            }
+            i {
+                cursor: pointer;
+                color: rgb(253, 12, 12);
+                &:hover {
+                    color: #e9c740;
+                }
+            }
+        }
+    }
+    #upper {
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        left: 48%;
+        top: -29px;
+    }
+}
