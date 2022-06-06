@@ -11,9 +11,10 @@
     background-size: cover;
     .navbar {
         width: 100%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        align-items: end;
+        padding: 1% 9%;
         .logo {
             a {
                 color: #000;
@@ -22,6 +23,9 @@
             }
         }
         nav {
+            width: 450px;
+            display: flex;
+            justify-content: space-between;
             ul {
                 display: flex;
                 gap: 30px;
@@ -71,6 +75,13 @@
                     a {
                         color: #fff;
                         font-size: 12px;
+                        background-color: red;
+                        width: 15px;
+                        height: 15px;
+                        align-items: center;
+                        justify-content: center;
+                        display: inline-grid;
+                        border-radius: 50%;
                     }
                 }
             }
@@ -90,11 +101,101 @@
     }
 }
 
+// Start instagram
+.insta {
+    width: 100%;
+    .insta-info {
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+        h2 {
+            font-size: 45px;
+            font-weight: 600;
+            padding: 20px 0;
+        }
+        p {
+            width: 62%;
+            margin: 0 auto;
+            color: #afafaf;
+        }
+    }
+    .insta-photo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 268px;
+        .insta-left {
+            display: flex;
+            width: 50%;
+            .photos {
+                width: 33.33%;
+                height: 100%;
+                position: relative;
+                &:hover .insta-icon {
+                    display: flex;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .insta-icon {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    bottom: 103px;
+                    left: 89px;
+                    background-color: #dbcc8f;
+                    align-items: center;
+                    display: none;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: zoom-in;
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .insta-right {
+            width: 50%;
+            display: flex;
+            .photos {
+                width: 33.33%;
+                height: 100%;
+                position: relative;
+                &:hover .insta-icon {
+                    display: flex;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .insta-icon {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    bottom: 103px;
+                    left: 89px;
+                    background-color: #dbcc8f;
+                    align-items: center;
+                    display: none;
+                    justify-content: center;
+                    border-radius: 50%;
+                    cursor: zoom-in;
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Start Categories
 .produce {
     width: 100%;
     background-color: #f8f9fa;
-    height: 1950px;
+    height: auto;
     .items {
         width: 100%;
         display: flex;
@@ -259,16 +360,30 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background-color: #000;
-            color: #fff;
+            background-color: #fff;
+            color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            border: 1px solid #a59e9e;
             margin: 0 5px;
             &:hover {
                 background-color: #dbcc8f;
                 transition: 0.5s;
+            }
+        }
+    }
+}
+
+// footer media
+@media only screen and (max-width: 576px) {
+    .footer-list {
+        .help {
+            .help-list {
+                .help-1{
+                    margin-right: 80px !important;
+                }
             }
         }
     }

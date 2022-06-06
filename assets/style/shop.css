@@ -8,21 +8,30 @@
 
 .shop .navbar {
   width: 100%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  padding: 1% 9%;
 }
 
 .shop .navbar .logo a {
   color: #000;
   font-size: 20px;
   font-weight: 800;
+}
+
+.shop .navbar nav {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .shop .navbar nav ul {
@@ -89,6 +98,18 @@
 .shop .navbar nav ul i a {
   color: #fff;
   font-size: 12px;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  border-radius: 50%;
 }
 
 .shop .home-shop {
@@ -106,10 +127,137 @@
   font-weight: 900;
 }
 
+.insta {
+  width: 100%;
+}
+
+.insta .insta-info {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.insta .insta-info h2 {
+  font-size: 45px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.insta .insta-info p {
+  width: 62%;
+  margin: 0 auto;
+  color: #afafaf;
+}
+
+.insta .insta-photo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 268px;
+}
+
+.insta .insta-photo .insta-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.insta .insta-photo .insta-left .photos {
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+}
+
+.insta .insta-photo .insta-left .photos:hover .insta-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insta .insta-photo .insta-left .photos img {
+  width: 100%;
+  height: 100%;
+}
+
+.insta .insta-photo .insta-left .photos .insta-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 103px;
+  left: 89px;
+  background-color: #dbcc8f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.insta .insta-photo .insta-left .photos .insta-icon i {
+  color: #fff;
+}
+
+.insta .insta-photo .insta-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insta .insta-photo .insta-right .photos {
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+}
+
+.insta .insta-photo .insta-right .photos:hover .insta-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insta .insta-photo .insta-right .photos img {
+  width: 100%;
+  height: 100%;
+}
+
+.insta .insta-photo .insta-right .photos .insta-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 103px;
+  left: 89px;
+  background-color: #dbcc8f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.insta .insta-photo .insta-right .photos .insta-icon i {
+  color: #fff;
+}
+
 .produce {
   width: 100%;
   background-color: #f8f9fa;
-  height: 1950px;
+  height: auto;
 }
 
 .produce .items {
@@ -328,8 +476,8 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,6 +488,7 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  border: 1px solid #a59e9e;
   margin: 0 5px;
 }
 
@@ -347,5 +496,11 @@
   background-color: #dbcc8f;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer-list .help .help-list .help-1 {
+    margin-right: 80px !important;
+  }
 }
 /*# sourceMappingURL=shop.css.map */

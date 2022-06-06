@@ -592,10 +592,10 @@
                     font-size: 14px;
                     font-weight: 100;
                 }
-                p{
+                p {
                     font-size: 12px;
                 }
-                a{
+                a {
                     font-size: 12px;
                 }
             }
@@ -603,8 +603,27 @@
     }
 }
 
-@media only screen and (max-width: 576px){
-    .copyright{
+@media only screen and (max-width: 576px) {
+    .copyright {
         margin-bottom: 15px;
+    }
+}
+
+// Media Shop
+@media only screen and (max-width: 576px) {
+    .items {
+        display: flex;
+        flex-direction: column-reverse;
+        .orders {
+            width: 100% !important;
+            padding: 80px 0;
+        }
+        .category{
+            width: 100% !important;
+            padding-bottom: 60;
+        }
+    }
+    .nums{
+        padding-bottom: 30px;
     }
 }

@@ -681,4 +681,27 @@
     margin-bottom: 15px;
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .items .orders {
+    width: 100% !important;
+    padding: 80px 0;
+  }
+  .items .category {
+    width: 100% !important;
+    padding-bottom: 60;
+  }
+  .nums {
+    padding-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=media.css.map */
