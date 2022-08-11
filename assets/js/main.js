@@ -21,11 +21,11 @@ upper.addEventListener("click", () => {
 const klik = document.querySelectorAll("#open");
 let x = document.querySelector("#submenu")
 
-klik.addEventListener("click" , () => {
-    if (x.style.display === "none") {
-        x.style.display = "block"
-    }
-    else {
-        x.style.display = "none";
-    }
-})
+// klik.addEventListener("click" , () => {
+//     if (x.style.display === "none") {
+//         x.style.display = "block"
+//     }
+//     else {
+//         x.style.display = "none";
+//     }
+// })
